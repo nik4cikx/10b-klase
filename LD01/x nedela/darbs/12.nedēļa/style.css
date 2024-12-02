@@ -1,0 +1,41 @@
+#main-container{
+    display:flex;
+}
+#side-container{
+    width: 30%;
+}
+#photo-container{
+    display: grid;
+    width: 70%;
+    grid-template-columns: 200px 200px 200px ;
+
+}
+#photo-container > img {
+    width: 200px;
+    height: 100px;
+}
+
+#header{
+    background-color: black;
+  text-align: center;  
+}
+#nav{
+    background-color: black;
+    text-align: center;
+}
+#item1 {
+    grid-column-start: 1;
+    grid-column-end:2 ;
+}
+#item2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#item3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#item4{
+    grid-row-start: 2;
+
+}
