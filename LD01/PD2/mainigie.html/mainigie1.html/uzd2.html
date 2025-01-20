@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript </title>
+   
+</head>
+<body>
+    <h1> JavaScript</h1>
+    <p> Ievadiet stundu (1-24)</p>
+    <input type="skaitlis" id="lietotājaStundas">
+    <button onclick="izvadaSveicienu()">Apstiprināt</button>
+    <p>Sveiciens:</p>
+    <p id="izvedesSveiciens"></p>
+    <script>
+function izvadaSveicienu (){
+    // iegūst lietotāja ievadītos datus
+    const h =document.getElementById("lietotājaStundas") .value;
+let sveiciens;
+//pārbaude vai ievadītā vērtība mazāka par 11
+if(h<10){
+    sveiciens="Labrīt";
+}
+else if (h>20){
+    sveiciens="Labdien";
+}else {
+    sveiciens="Labvakar!";
+}
+document.getElementById("izveidesSveiciens") .innerHTML=sveiciens;
+}
+//Parāda sveicienu
+
+
+
+
+    </script>
+    
+
+</body>
+</html>
