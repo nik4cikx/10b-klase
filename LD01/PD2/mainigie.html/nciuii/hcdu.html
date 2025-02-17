@@ -1,0 +1,31 @@
+<html> 
+<head>
+<title>Dienas nosaukums</title>
+</head>
+<body>
+<h1>Ievadiet dienu skaitu (1-7):</h1>
+<!-- Ievades lauks-->
+ <input type="number" id="dienasSkaitls" min="1" max="7" placeholder="Piemērs: 1">
+ <button onclick="paraditDienu">Parādīt dienu</button>
+ <p id="rezultāts"> </p>
+ <script>
+    function paraditDienu () {
+        //iegūst lietotāja ievadīto skaitli
+        let dienasSkaitls = parseInt (document.getElementById("dienasSkaitls") .value) ;
+        // masīvs ar dienu nosaukumiem
+        let dienasNosaukums=["pirmdiena", "otrdiena", "trešdiena", "ceturtdiena", "piektdiena", "sestdiena", "svētdiena"] ;
+        if(dienasSkaitls>=1 && dienasSkaitls<=7) {
+            document.getElementById("rezultāts") .innerText="Šodien ir:"+dienasNosaukums[dienasSkaitls-1]+"!" ;
+        }
+        else {
+            document.getElementById("rezultāts") .innerText="Lūdzu ievadiet skaitli no 1-7" ;
+        }
+    }
+ </script>
+
+
+</body>
+
+
+
+</html>
